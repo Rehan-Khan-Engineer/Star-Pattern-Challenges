@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Pattern challenges</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="title"><h1>JavaScript Star Pattern Challenges!</h1></div>
+    <div id="challenge-1">
+      <h4 class="sub-title">Challenge - 1 : Right Triangle</h4>
+      <p class="script">
+        <script>
+          for (let i = 0; i < 5; i++) {
+            let star = "";
+            for (let j = 0; j <= i; j++) {
+              star = star + "*";
+            }
+            document.write(star + "<br>");
+          }
+        </script>
+      </p>
+    </div>
+    <div id="challenge-2">
+      <h4 class="sub-title">Challenge - 2 : Reverse Pyramid</h4>
+
+      <p class="script">
+        <script>
+          for (let i = 1; i < 6; i++) {
+            let star = "*";
+            for (let j = 5; j > i; j--) {
+              star = star + "**";
+            }
+            for (let j = 1; j < i; j++) {
+              document.write(` &nbsp`);
+            }
+            document.write(star + "<br>");
+          }
+        </script>
+      </p>
+    </div>
+    <div id="challenge-3">
+      <h4 class="sub-title">Challenge - 3 : Diamond</h4>
+      <p class="script">
+        <script>
+          for (let i = 1; i < 10; i++) {
+            let diamond = "*";
+            if (i < 6) {
+              for (let j = 1; j < i; j++) {
+                diamond = diamond + "**";
+              }
+              for (let j = 5; j > i; j--) {
+                document.write(` &nbsp`);
+              }
+            } else if (i > 5) {
+              for (let j = 9; j > i; j--) {
+                diamond = diamond + "**";
+              }
+              for (let j = 1; j < i - 4; j++) {
+                document.write(` &nbsp`);
+              }
+            }
+            document.write(diamond + "<br>");
+          }
+        </script>
+      </p>
+    </div>
+    <div id="challenge-4">
+      <h4 class="sub-title">Challenge - 4 : Hour Glass</h4>
+      <p class="script">
+        <script>
+          for (let i = 1; i < 10; i++) {
+            let star = "*";
+            if (i < 6) {
+              for (let j = 5; j > i; j--) {
+                star = star + "**";
+              }
+              for (let j = 1; j < i; j++) {
+                document.write(` &nbsp`);
+              }
+            } else if (i > 5) {
+              for (let j = 5; j < i; j++) {
+                star = star + "**";
+              }
+              for (let j = 9; j > i; j--) {
+                document.write(` &nbsp`);
+              }
+            }
+            document.write(star + "<br>");
+          }
+        </script>
+      </p>
+    </div>
+    <div id="challenge-5">
+      <h4 class="sub-title">Challenge - 5 : Hollow Diamond</h4>
+      <p class="script">
+        <script>
+          for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= 5 - i; j++) {
+              document.write(`&nbsp`);
+            }
+            for (j = 1; j <= 2 * i - 1; j++) {
+              if (j == 1 || j == 2 * i - 1) document.write(`*`);
+              else document.write(`&nbsp`);
+            }
+            document.write("<br>");
+          }
+          for (i = 4; i >= 1; i--) {
+            for (j = 1; j <= 5 - i; j++) {
+              document.write(`&nbsp`);
+            }
+            for (j = 1; j <= 2 * i - 1; j++) {
+              if (j == 1 || j == 2 * i - 1) document.write(`*`);
+              else document.write(`&nbsp`);
+            }
+            document.write("<br>");
+          }
+
+          document.write(`<br>`);
+        </script>
+      </p>
+    </div>
+  </body>
+</html>

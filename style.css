@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: bold;
+  color: #494949;
+}
+
+div {
+  margin: 10px auto;
+  padding: 20px 0;
+  width: 80%;
+
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 10px;
+}
+
+#title,
+#challenge-5 {
+  border-bottom: 2px solid #ff0062;
+}
+
+#title {
+  padding-left: 10px;
+}
+.sub-title {
+  margin: 0;
+  padding: 10px;
+}
+
+p {
+  margin: 0 0 0 15px;
+}
